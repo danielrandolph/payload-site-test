@@ -1,0 +1,36 @@
+{
+  "name": "meridian-conf",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Meridian 2026 technology conference site — schedule, registration, and attendee accounts, backed by Payload.",
+  "type": "module",
+  "scripts": {
+    "dev": "payload migrate && next dev",
+    "build": "payload migrate && next build",
+    "start": "next start",
+    "reset": "rm -f payload.sqlite payload.sqlite-* && payload migrate",
+    "generate:types": "payload generate:types",
+    "generate:importmap": "payload generate:importmap"
+  },
+  "dependencies": {
+    "@payloadcms/db-sqlite": "3.90.2",
+    "@payloadcms/next": "3.90.2",
+    "@payloadcms/ui": "3.90.2",
+    "graphql": "^16.8.1",
+    "next": "16.3.7",
+    "payload": "3.90.2",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "sass": "^1.77.0",
+    "sharp": "0.35.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
